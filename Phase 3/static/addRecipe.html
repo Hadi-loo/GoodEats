@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body style="text-align: center;">
+    <h1>Goodeats</h1>
+    <h2>Add Recipe</h2>
+    <div>
+      <form action="/ChefHomePage/AddRecipe" method="post">
+        <input name="title" type="text" placeholder="Title" required />
+        <br />
+        <br />
+        <input name="ingredients" type="text" placeholder="Ingredients(comma separated)" required />
+        <br />
+        <br />
+        <input name="minutes_to_ready" type="number" placeholder="Minutes to Ready" min="0" required />
+        <br />
+        <br />
+        <input name="tags" type="text" placeholder="Tags(comma separated)" required />
+        <br />
+        <br />
+        <input name="image_address" type="text" placeholder="Image Address" required />
+        <br />
+        <br />
+        <p>Vegetarian:
+        <input type="radio" id="Yes" name="vegetarian" value="Yes">
+        <label for="Yes">Yes</label>
+        <input type="radio" id="No" name="vegetarian" value="No" checked>
+        <label for="No">No</label>
+        </p> 
+        <br />
+        <br />
+        <button type="submit" >Confirm</button>
+      </form>
+      <br />
+      <form action="/ChefHomePage" method="get">
+        <button type="submit">Back</button>
+      </form>
+      <br />
+      <form action="/" method="post">
+        <button type="submit">Sign out</button>
+      </form>
+    </div>
+  </body>
+</html>

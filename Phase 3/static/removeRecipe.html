@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body style="text-align: center;">
+    <h1>Goodeats</h1>
+    <h2>Remove Recipe</h2>
+    <div>
+      <form action="/ChefHomePage/RemoveRecipe" method="post">
+        <input name="recipe_id" type="number" placeholder="Recipe ID" min="1" required />
+        <br />
+        <br />
+        <button type="submit">Confirm</button>
+      </form>
+      <br />
+      <form action="/ChefHomePage" method="get">
+        <button type="submit">Back</button>
+      </form>
+      <br />
+      <form action="/" method="post">
+        <button type="submit">Sign out</button>
+      </form>
+    </div>
+  </body>
+</html>
